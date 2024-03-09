@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5 auto);
+    column-gap: 16px;
+    max-width: 1536px;
+    height: 100%;
+    background-color: rgba(222, 74, 15, 0.3);
+
+}
+    .titulo {
+        max-width: 1536px;
+        margin: o auto;
+        width: 100%;
+        grid-column: 1 / span 12;
+        font-size: 175px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bold;
+        font-weight: 400;
+        text-align: center;
+        justify-content: center;
+        color: #333333;
+        text-shadow: 50px 10px 10px 10px;
+        padding: 50px 0 50px 0;
+    }
+
+        & .titulo__world {
+            max-width: 1536px;
+            font-size: 260px;
+            font-size: larger;
+            font-weight: bold;
+            font-weight: 400;
+            text-align: center;
+            align-items: center;
+            color: #de4a0fb3;
+            text-shadow: 10px 10px 1px#de4a0fb3(0,0,0,0.3);
+            display: inline-block; /* Para que la palabra "World" esté en línea */
+            vertical-align: middle; /* Centra verticalmente respecto a la línea base */
+        }
+
+.texto{
+    display: grid;
+    grid-column: 1/5;
+
+        & .texto__inicio {
+            grid-column: 1/5;
+            grid-row: 1/2;
+            font-size: 45px;
+            font-weight: bold;
+            font-style: italic;
+            font-weight: 700;
+            color: #de4a0fb3;
+            text-align: center;
+            padding-left:50px;
+        }
+        & .texto__newsletter {
+            grid-column: 1/5;
+            grid-row: 2/3;
+            font-size: 16px;
+            color: #333333;
+            text-align: center;
+        
+        }
+        & .texto__descuento {
+            grid-column: 1/5;
+            grid-row: 4/5;
+            font-size: 15px;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+}
+.boton{
+    grid-column: 1/5;
+    grid-row: 3/4;
+    height: 100px;
+    font-size: 40px;
+    font-weight: 800;
+    font-weight: extra-bold;
+    text-align: center;
+    background-color: #de4a0fb3;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+.imagen{
+    display: grid;
+    grid-column: 6 / 11;
+
+    & .imagen__sobrasada {
+        grid-column: 5 / 12;
+        margin-right: 50px;
+        border-radius: 30px;
+    }
+        & .imagen__sello {
+            grid-column: 8 / 10;
+            grid-row: 2/3;
+            width: 50%;
+        }
+}
+
+
+
+
+
